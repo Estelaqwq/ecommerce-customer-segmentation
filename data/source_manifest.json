@@ -1,0 +1,12 @@
+{
+  "id": 5091866,
+  "title": "Ecommerce Product Recommendation Collaborative",
+  "ref": "kartikeybartwal/ecommerce-product-recommendation-collaborative",
+  "licenseName": "Apache 2.0",
+  "currentVersionNumber": 1,
+  "lastUpdated": "2024-05-27T04:29:22.997Z",
+  "source_url": "https://www.kaggle.com/datasets/kartikeybartwal/ecommerce-product-recommendation-collaborative",
+  "metadata_verified_on": "2026-11-09",
+  "local_file": "raw/user_personalized_features.csv",
+  "sha256": "7200668c7199bad39b19dc0541fde8221856b09e79dc5fc6ad4b2a20d18408c9"
+}

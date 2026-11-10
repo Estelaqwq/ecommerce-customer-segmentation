@@ -1,0 +1,12 @@
+model Model
+	culture: zh-CN
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: zh-CN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+ref table 用户
+ref table 权重比较
+ref table 收益情景
+ref cultureInfo zh-CN

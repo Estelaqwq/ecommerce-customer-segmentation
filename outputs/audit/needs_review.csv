@@ -1,0 +1,86 @@
+﻿User_ID,Age,Gender,Location,Income,Interests,Last_Login_Days_Ago,Purchase_Frequency,Average_Order_Value,Total_Spending,Product_Category_Preference,Time_Spent_on_Site_Minutes,Pages_Viewed,Newsletter_Subscription
+#28,61,Male,Urban,142721,Food,1,0,76,533,Electronics,145,23,False
+#41,26,Female,Rural,57900,Food,3,0,83,1273,Electronics,159,13,False
+#50,37,Male,Suburban,55851,Sports,4,0,73,3915,Health & Beauty,419,6,False
+#54,61,Female,Urban,33944,Food,24,0,188,3410,Books,456,13,False
+#67,46,Female,Urban,135812,Food,23,0,79,3164,Home & Kitchen,138,17,True
+#82,33,Female,Rural,22023,Sports,6,0,114,2184,Health & Beauty,310,19,True
+#95,42,Female,Urban,129126,Sports,23,0,153,4250,Home & Kitchen,236,25,True
+#112,58,Male,Urban,135281,Fashion,17,0,155,1268,Home & Kitchen,205,18,False
+#117,29,Female,Urban,129458,Travel,5,0,192,2967,Books,77,48,False
+#118,51,Female,Suburban,130384,Food,6,0,90,3616,Home & Kitchen,410,8,False
+#124,61,Female,Suburban,62092,Food,17,0,124,4116,Books,77,22,False
+#129,18,Male,Suburban,33428,Food,26,0,175,4125,Apparel,578,22,False
+#130,52,Male,Suburban,63934,Sports,10,0,198,2366,Home & Kitchen,382,1,True
+#133,31,Female,Suburban,30258,Fashion,19,0,99,4275,Apparel,368,5,True
+#135,18,Female,Urban,101580,Fashion,2,0,30,1082,Books,143,10,False
+#140,44,Male,Suburban,144086,Sports,14,0,81,255,Home & Kitchen,446,35,True
+#148,56,Male,Suburban,47386,Fashion,28,0,138,4472,Apparel,596,25,False
+#161,49,Female,Rural,148046,Travel,15,0,132,2348,Electronics,255,19,False
+#167,62,Female,Suburban,136859,Fashion,19,0,72,802,Books,64,41,False
+#176,45,Male,Rural,115804,Food,16,0,184,4769,Electronics,66,24,True
+#179,50,Female,Urban,66850,Sports,29,0,125,857,Health & Beauty,558,42,True
+#233,26,Male,Rural,65603,Travel,2,0,93,2142,Books,196,14,False
+#236,46,Female,Suburban,21431,Sports,15,0,31,4789,Electronics,522,13,True
+#245,49,Female,Urban,39675,Sports,16,0,89,1273,Apparel,537,45,False
+#253,18,Male,Suburban,29833,Travel,8,0,90,1258,Home & Kitchen,89,40,True
+#255,45,Female,Urban,52972,Travel,15,0,78,2957,Apparel,352,43,False
+#285,57,Male,Rural,124646,Food,26,0,36,1392,Home & Kitchen,283,2,False
+#291,46,Male,Urban,131487,Sports,9,0,115,4076,Electronics,580,4,True
+#309,34,Female,Urban,62891,Food,26,0,48,3495,Health & Beauty,15,37,False
+#310,50,Male,Urban,101912,Fashion,20,0,198,913,Books,297,48,False
+#392,31,Female,Urban,76700,Fashion,23,0,30,2835,Home & Kitchen,382,41,True
+#396,45,Male,Urban,138555,Sports,20,0,70,921,Home & Kitchen,468,49,True
+#403,39,Female,Rural,33565,Travel,8,0,83,3546,Apparel,253,19,True
+#404,39,Male,Suburban,40354,Travel,1,0,180,2890,Health & Beauty,13,29,True
+#405,59,Female,Suburban,62951,Fashion,5,0,26,2807,Health & Beauty,299,2,True
+#420,47,Male,Urban,26852,Travel,24,0,105,2028,Books,580,30,True
+#423,57,Female,Rural,22551,Sports,24,0,19,4832,Home & Kitchen,123,36,False
+#432,43,Male,Suburban,77828,Fashion,8,0,93,1225,Health & Beauty,539,30,True
+#458,46,Female,Suburban,129472,Technology,11,0,106,4101,Electronics,6,10,True
+#486,22,Male,Rural,62870,Travel,19,0,70,307,Home & Kitchen,536,17,False
+#500,50,Female,Suburban,36154,Food,19,0,124,3370,Books,574,13,False
+#503,54,Female,Rural,75426,Travel,11,0,65,4566,Apparel,240,44,True
+#511,61,Female,Rural,108708,Technology,19,0,196,1621,Apparel,198,42,False
+#514,29,Male,Urban,97275,Travel,18,0,136,3442,Health & Beauty,431,3,True
+#531,62,Female,Urban,101623,Travel,24,0,97,4798,Home & Kitchen,571,29,True
+#542,52,Female,Suburban,105751,Technology,22,0,146,3560,Electronics,56,12,False
+#545,35,Female,Urban,115648,Travel,19,0,26,4871,Home & Kitchen,69,1,True
+#546,56,Male,Rural,45556,Fashion,1,0,126,382,Home & Kitchen,449,26,True
+#552,29,Female,Suburban,33230,Food,12,0,94,1252,Books,434,35,True
+#594,40,Male,Urban,107960,Technology,22,0,140,4165,Home & Kitchen,181,34,False
+#596,60,Male,Urban,75077,Technology,8,0,28,1853,Apparel,341,10,False
+#622,39,Female,Rural,87990,Technology,5,0,138,3359,Electronics,449,29,False
+#635,27,Female,Suburban,66738,Sports,21,0,80,3899,Electronics,364,7,True
+#638,56,Male,Urban,32109,Technology,17,0,163,2215,Health & Beauty,170,2,False
+#656,61,Male,Urban,127945,Food,10,0,170,4125,Health & Beauty,384,18,False
+#658,49,Male,Suburban,44264,Sports,15,0,87,2642,Books,126,21,True
+#667,52,Male,Urban,33947,Technology,12,0,96,369,Books,23,26,True
+#668,36,Female,Urban,99222,Fashion,24,0,88,3560,Electronics,566,36,False
+#672,58,Female,Urban,72142,Food,14,0,133,2179,Books,216,2,False
+#677,20,Female,Rural,54228,Food,10,0,55,1556,Apparel,557,5,False
+#693,43,Female,Suburban,31240,Fashion,23,0,21,2022,Home & Kitchen,586,25,False
+#706,45,Female,Urban,109709,Food,3,0,110,1175,Electronics,285,19,True
+#722,18,Male,Rural,85087,Sports,22,0,102,4581,Electronics,282,28,False
+#731,44,Female,Urban,64900,Fashion,15,0,81,2458,Books,61,43,False
+#745,55,Female,Suburban,79871,Travel,18,0,19,867,Electronics,325,31,True
+#750,27,Male,Rural,52174,Fashion,12,0,124,3242,Apparel,564,26,True
+#765,51,Female,Suburban,100404,Technology,8,0,21,4645,Apparel,67,18,True
+#808,27,Male,Rural,44000,Food,10,0,199,2008,Apparel,457,24,True
+#810,27,Male,Suburban,95868,Travel,27,0,143,4328,Books,203,7,True
+#814,22,Male,Suburban,115655,Fashion,29,0,161,1870,Books,512,5,False
+#818,30,Female,Urban,76044,Fashion,9,0,158,897,Books,468,35,True
+#835,20,Male,Urban,116038,Fashion,4,0,189,1882,Electronics,307,36,True
+#866,34,Female,Suburban,79518,Sports,18,0,96,2779,Apparel,475,48,True
+#876,43,Male,Urban,80348,Technology,21,0,98,220,Apparel,273,24,False
+#879,31,Female,Urban,129835,Sports,23,0,156,3775,Apparel,123,16,False
+#901,56,Male,Urban,43377,Sports,11,0,12,854,Electronics,38,45,True
+#909,30,Male,Rural,36977,Food,14,0,165,4701,Electronics,144,1,False
+#930,54,Male,Suburban,54610,Fashion,8,0,190,4875,Apparel,558,39,False
+#936,54,Female,Rural,90194,Sports,6,0,16,2449,Electronics,138,37,True
+#953,53,Female,Suburban,91975,Food,19,0,160,4734,Health & Beauty,373,8,True
+#957,19,Male,Suburban,48669,Food,17,0,77,3704,Home & Kitchen,254,21,False
+#961,21,Female,Urban,54624,Fashion,6,0,62,440,Health & Beauty,581,44,False
+#964,47,Female,Suburban,87534,Technology,6,0,53,759,Apparel,542,16,True
+#975,43,Female,Suburban,58392,Technology,26,0,65,4968,Health & Beauty,288,44,False
+#978,37,Female,Urban,30516,Food,26,0,86,1020,Books,427,43,False

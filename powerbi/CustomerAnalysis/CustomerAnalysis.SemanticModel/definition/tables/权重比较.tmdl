@@ -1,0 +1,61 @@
+table 权重比较
+
+	column 浏览权重
+		dataType: double
+		sourceColumn: 浏览权重
+		summarizeBy: none
+		formatString: 0%
+
+	column 名单重合率
+		dataType: double
+		sourceColumn: 名单重合率
+		summarizeBy: none
+		formatString: 0.0%
+
+	column 替换人数
+		dataType: int64
+		sourceColumn: 替换人数
+		summarizeBy: none
+		formatString: #,0
+
+	column 入选人数
+		dataType: int64
+		sourceColumn: 入选人数
+		summarizeBy: none
+		formatString: #,0
+
+	column 平均累计消费
+		dataType: double
+		sourceColumn: 平均累计消费
+		summarizeBy: none
+		formatString: 0.00
+
+	column 平均浏览得分
+		dataType: double
+		sourceColumn: 平均浏览得分
+		summarizeBy: none
+		formatString: 0.00
+
+	measure 名单重合比例 = MAX('权重比较'[名单重合率])
+		formatString: 0.0%
+
+	measure 更换人数 = MAX('权重比较'[替换人数])
+		formatString: #,0
+
+	measure 入选平均消费 = MAX('权重比较'[平均累计消费])
+		formatString: #,0.00
+
+	measure 入选平均浏览得分 = MAX('权重比较'[平均浏览得分])
+		formatString: 0.00
+
+	partition 权重比较 = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Binary.Decompress(Binary.FromText("NczBSgNBDAbge6FvEkIyyUwybyeI7npY7aV4kB4UijcVrEJ70Jdxptu3cLauh0Dy8+WvH3fjc183l6dugLIayrBuW1n1x9sO6sN3HZ5+Doe6foNytT1d3Pwf+/ey6Y671/HlsX72424/R/XcV77uS3+9XBAScBuCQATKbGgC6ugSRNzMAmeVCTIQ5hghz5QyukJs3+qaLeXkbBomGibKwP5HyRU9QRQkUxVNJpKSn1ulUW9OZ6oRnSNERYutUy1IYqesy8Uv", BinaryEncoding.Base64), Compression.Deflate), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"浏览权重", type number}, {"名单重合率", type number}, {"替换人数", Int64.Type}, {"入选人数", Int64.Type}, {"平均累计消费", type number}, {"平均浏览得分", type number}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

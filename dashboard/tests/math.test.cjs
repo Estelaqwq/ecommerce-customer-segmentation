@@ -1,0 +1,35 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const M=require('../src/math.js');
+const full=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/full.json'),'utf8'));
+const clean=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/clean.json'),'utf8'));
+const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
+assert.equal(full.length,1000);assert.equal(new Set(full.map(r=>r.id)).size,1000);
+assert.equal(clean.length,915);assert.ok(clean.every(r=>!r.review));
+assert.equal(full.filter(r=>r.review).length,85);
+assert.equal(full.filter(r=>r.subscribed).length,507);
+assert.equal(clean.filter(r=>r.subscribed).length,466);
+assert.equal(full.filter(r=>r.group==='核心用户').length,70);
+assert.equal(full.filter(r=>r.group==='潜力用户').length,89);
+assert.equal(clean.filter(r=>r.group==='潜力用户'&&r.subscribed).length,40);
+for(const [weight,overlap,replaced] of [[0,1,0],[.1,.955,9],[.2,.91,18],[.3,.88,24]]){
+ const c=M.compare(full,weight,200);close(c.overlap,overlap);assert.equal(c.entered.length,replaced);assert.equal(c.left.length,replaced);
+}
+assert.equal(M.compare(full.slice(0,10),.2,200).count,10);
+assert.equal(M.compare(full.slice(0,10),.2,200).overlap,1);
+assert.equal(M.compare([],.2,200).overlap,null);
+for(const r of full) close(M.score(r,.2),r.score);
+const p={p0:.01,p1:.05,aov:104.039,margin:.4,coupon:10,contact:.5};
+close(M.scenario(89,p).net,59.151536);
+close(M.scenario(89,{...p,p1:.02}).net,-25.262116);
+close(M.scenario(89,{...p,p1:.2}).net,481.219796);
+close(M.scenario(89,p).breakeven,.0289779728994547);
+assert.equal(M.scenario(89,{...p,coupon:0,contact:0}).roi,null);
+assert.equal(M.scenario(89,{...p,margin:0}).breakeven,null);
+assert.equal(M.scenario(0,p).net,0);assert.equal(M.scenario(0,p).breakeven,null);
+const filtered=full.filter(r=>M.matches(r,{group:'潜力用户',subscription:'yes'}));assert.equal(filtered.length,46);
+assert.equal(full.filter(r=>M.matches(r,{group:'其他用户',segment:'核心VIP'})).length,0);
+const corner={base:50,i:100,freq:9};assert.ok(M.matches(corner,{cell:[4,2]},[[50,50],[100,100]]));
+assert.ok(!M.matches(corner,{cell:[3,2]}));
+console.log('PASS: dataset, model variants, ranking, ties, cohorts, ROI, breakeven, empty states.');
