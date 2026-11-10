@@ -1,0 +1,17 @@
+﻿User_ID,Needs_Review,原分层,新分层,原目标成员,新目标成员
+#53,False,一般用户,高潜沉睡用户,False,True
+#67,True,高潜流失客,,True,False
+#95,True,高潜流失客,,True,False
+#140,True,纠结土豪,,True,False
+#310,True,高潜沉睡用户,,True,False
+#396,True,高潜沉睡用户,,True,False
+#531,True,高潜流失客,,True,False
+#542,True,高潜流失客,,True,False
+#545,True,高潜流失客,,True,False
+#594,True,高潜流失客,,True,False
+#612,False,一般用户,高潜沉睡用户,False,True
+#692,False,一般用户,高潜沉睡用户,False,True
+#835,True,高潜沉睡用户,,True,False
+#879,True,高潜流失客,,True,False
+#910,False,一般用户,高潜沉睡用户,False,True
+#961,True,犹豫型潜力用户,,True,False
