@@ -50,8 +50,6 @@ jupyter lab
 
 打开 `code/`，先运行用户分层分析，再运行收益情景测算。SQL 与权重分析读取 `outputs/baseline/user_segments.csv`，可独立运行。
 
-## 数据与参考
+## 数据
 
 数据集：[Ecommerce Product Recommendation Collaborative](https://www.kaggle.com/datasets/kartikeybartwal/ecommerce-product-recommendation-collaborative) · [数据字典](data/data_dictionary.xlsx) · [数据许可](data/LICENSE.txt)
-
-参考视频：[小马上学数分：数据分析实战项目](https://www.bilibili.com/video/BV1DkPcz7Esa/)
